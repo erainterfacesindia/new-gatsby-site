@@ -18,10 +18,7 @@ export default function Home() {
             <h1> Our Services</h1>
 
           </div>
-          < img src="/download.jpg" alt="home page " style={{maxWidth: '25%', maxHeight:"50%"}}/>
-          < img src="/download.jpg" alt="home page " style={{maxWidth: '25%', maxHeight:"50%"}}/>
-          < img src="/download.jpg" alt="home page " style={{maxWidth: '25%', maxHeight:"50%"}}/>
-          < img src="/download.jpg" alt="home page" style={{maxWidth: '25%', maxHeight:"50%"}}/>
+          < img src="/gatsby.png" alt="home page " style={{maxWidth: '25%', maxHeight:"50%"}}/>
         </section>
        
         </Layout>
