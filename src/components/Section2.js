@@ -9,21 +9,20 @@ import { useStaticQuery } from 'gatsby'
  
 function Section2 (data) {
     const ServicesArray = []
-    data.allFile.edges.map(({node}) => {
+    data.allFile.edges.map(({node , index}) => {
     ServicesArray.push(
-        <ProductCard key={node.id}>
-            <ProductImage>
-         image={node.childImageSharp.gatsbyImageData} alt={node.base} 
-        </ProductImage>
+        <ProductCard key={index}>
+            <GatsbyImage
+        image={node.childImageSharp.gatsbyImageData} alt={node.base}/>
         
       <ProductInfo>
-         <TextWrap>       
+         {/* <TextWrap>       
          <ProductTitle>
             <h1>Our Services</h1>
         </ProductTitle>
             <h1> Blog 1</h1>  
             
-           </TextWrap>
+           </TextWrap> */}
            <Button to="/" primary="true" round="true" css={`
            position:"absolute;
            top :420px;
@@ -51,8 +50,13 @@ query{
           base
           relativePath
           childImageSharp {
-            gatsbyImageData
-            
+            gatsbyImageData(
+                height: 480
+                width: 480
+                placeholder: BLURRED
+                quality: 70
+                blurredOptions: {width: 100}
+              )
           }
         }
       }
@@ -148,14 +152,14 @@ font-size: 1rem;
 margin-left: 1 rem;
 margin-left:0.5rem;
 `
-const ProductImage=styled(GatsbyImage)`
-height:100%;
-max-width:100%;
-position:absolute;
-border-radius:10px;
-filter:brightness(70%);
-tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
+// const GatsbyImage=styled.div`
+// height:100%;
+// max-width:100%;
+// position:absolute;
+// border-radius:10px;
+// filter:brightness(70%);
+// tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
 
-&:hover {
-  filter: brightness(100%)
-}`
+// &:hover {
+//   filter: brightness(100%)
+// }`
