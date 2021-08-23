@@ -43,7 +43,7 @@ return ServicesArray
 
 }
 
-export default function Ourservices() {
+export default function Ourservices({heading}) {
     const data= useStaticQuery(
       graphql`
 query{
@@ -74,7 +74,7 @@ query{
     console.log(data)
     return (
       <ProductsContainer>
-      <ProductsHeading>Heading</ProductsHeading>
+      <ProductsHeading>{heading}</ProductsHeading>
        <ProductWrapper> {/* style={{display: "flex", flexDirection: "row"}} */}
       {/* <Carousel
         index={index}
