@@ -2,19 +2,22 @@
  import { GatsbyImage } from "gatsby-plugin-image"
  import { graphql } from "gatsby"
  import 'bootstrap/dist/css/bootstrap.min.css';
-//  import { Carousel } from "react-bootstrap"
+import { Carousel } from "react-bootstrap"
 import styled from "styled-components"
 import {Button} from './Button'
 import { useStaticQuery } from 'gatsby'
+//import { Carousel } from "bootstrap";
  
 function Section2 (data) {
     const ServicesArray = []
     data.allFile.edges.map(({node , index}) => {
     ServicesArray.push(
-        <ProductCard key={index}>
+        <Carousel>
+          <Carousel.Item key={node.id}>
             <GatsbyImage
         image={node.childImageSharp.gatsbyImageData} alt={node.base}/>
         
+        <ProductCard key={index}>
       <ProductInfo>
          {/* <TextWrap>       
          <ProductTitle>
@@ -29,7 +32,11 @@ function Section2 (data) {
            font-size:14px;
            `}>Show More</Button> 
        </ProductInfo>
-   </ProductCard>
+       </ProductCard>
+       </Carousel.Item>
+        </Carousel>
+
+  
    )
     })
 return ServicesArray
