@@ -1,6 +1,6 @@
 import * as React from "react"
 import Header from "./Header"
-import { GlobalStyle } from './Styles/GlobalStyle'
+import { GlobalStyle } from './Style/GlobalStyle'
 
 const Layout = ({ children }) => {
   
