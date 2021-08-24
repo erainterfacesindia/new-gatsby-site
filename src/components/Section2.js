@@ -23,13 +23,13 @@ query{
         base
         relativePath
         childImageSharp {
-          gatsbyImageData(
-              height: 480
-              width: 480
-              placeholder: BLURRED
-              quality: 70
-              blurredOptions: {width: 100}
-            )
+           gatsbyImageData(
+            height: 480
+            width: 480
+            placeholder: BLURRED
+            quality: 70
+            blurredOptions: {width: 100}
+          )
         }
       }
     }
@@ -37,18 +37,33 @@ query{
 }
 `)
 
+
 function Section2(data) {
   const ourservicesArray = []
     data.allFile.edges.map(({node , index}) => { 
       ourservicesArray.push(
         <ProductCard key={index}>
-    <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.base} styled={(borderRadius="10px")}/>
+   
+    <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.base} css={`
+       height:100%;
+       max-width:100%;
+       position:absolute;
+       border-radius:10px;
+       filter:brightness(70%);
+       tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
+       
+       &:hover {
+         filter: brightness(100%)
+       }
+        
+    `}/>
+    
       <ProductInfo>     
          <ProductTitle>
             Blogs
         </ProductTitle>
            <Button to="/" primary="true" round="true" css={`
-           position:"absolute;
+           position:"absolute";
            top :420px;
            font-size:14px;
            `}>Show More</Button> 
@@ -72,29 +87,30 @@ min-height:100vh;
 padding: 5rem calc((100vw - 1300px)/2);
 background: white;
 color:#fff;
+background-color: black;
 `
 
 const ProductsHeading = styled.div`
 font-size: clamp(1.2rem,5vw,3rem);
 text-align: center;
 margin-bottom: 5rem;
-color: #000;
+color: #fff;
 `
 const ProductWrapper = styled.div`
 display: grid;
-grid-template-columns:repeat(4,1fr);
+grid-template-columns:repeat(3,1fr);
 grid-gap:20px;
 justify-items:center;
 padding:0 3rem;
 
 @media screen and (max-width: 1200px)
 {
-  grid-template-colums: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 868px)
 {
-  grid-template-colums: 1fr;
+  grid-template-columns: 1fr;
 }`
 
 const ProductCard = styled.div`
@@ -108,6 +124,11 @@ tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
 
 &:hover {
   filter: brightness(100%);
+}
+
+@media screen and (max-width: 280px)
+{
+  padding:0 1rem;
 }`
 
 const ProductInfo = styled.div`
@@ -133,7 +154,7 @@ font-size: 1rem;
 margin-left: 1 rem;
 margin-left:0.5rem;
 `
-// image=styled.div`
+// const ProductImage=styled(GatsbyImage)`
 // height:100%;
 // max-width:100%;
 // position:absolute;
