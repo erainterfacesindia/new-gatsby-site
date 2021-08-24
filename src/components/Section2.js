@@ -57,16 +57,17 @@ function Section2(data) {
        }
         
     `}/>
-    
-      <ProductInfo>     
-         <ProductTitle>
-            Blogs
+      <ProductInfo>   
+      
+         <ProductTitle css={`color:white; font-size: 1.3vw;`}>
+         Our Technology-Enabled Solutions
         </ProductTitle>
            <Button to="/" primary="true" round="true" css={`
-           position:"absolute";
+           position:absolute;
            top :420px;
            font-size:14px;
            `}>Show More</Button> 
+             
        </ProductInfo>
        </ProductCard>
       )
@@ -143,16 +144,17 @@ padding: 0 2rem;
 }`
 
 const TextWrap = styled.div`
-display: flex;
 align-items: center;
 position: absolute;
 top: 375px;`
 
 const ProductTitle = styled.div`
+position: absolute;
 font-weight: 400;
 font-size: 1rem;
 margin-left: 1 rem;
 margin-left:0.5rem;
+top: 375px;
 `
 // const ProductImage=styled(GatsbyImage)`
 // height:100%;
