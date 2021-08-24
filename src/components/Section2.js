@@ -6,26 +6,47 @@ import { Carousel } from "react-bootstrap"
 import styled from "styled-components"
 import {Button} from './Button'
 import { useStaticQuery } from 'gatsby'
+import { push } from "object-path";
 //import { Carousel } from "bootstrap";
  
-function Section2 (data) {
-    const ServicesArray = []
-    data.allFile.edges.map(({node , index}) => {
-    ServicesArray.push(
-        <Carousel>
-          <Carousel.Item key={node.id}>
-            <GatsbyImage
-        image={node.childImageSharp.gatsbyImageData} alt={node.base}/>
-        
+export default function Ourservices({heading}) {
+  const data= useStaticQuery(
+    graphql`
+query{
+ allFile(
+    filter: {relativeDirectory: {eq: "ourservices"}}
+    sort: {fields: base, order: ASC}
+  ) {
+    edges {
+      node {
+        id
+        base
+        relativePath
+        childImageSharp {
+          gatsbyImageData(
+              height: 480
+              width: 480
+              placeholder: BLURRED
+              quality: 70
+              blurredOptions: {width: 100}
+            )
+        }
+      }
+    }
+  }
+}
+`)
+
+function Section2(data) {
+  const ourservicesArray = []
+    data.allFile.edges.map(({node , index}) => { 
+      ourservicesArray.push(
         <ProductCard key={index}>
-      <ProductInfo>
-         {/* <TextWrap>       
+    <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.base} styled={(borderRadius="10px")}/>
+      <ProductInfo>     
          <ProductTitle>
-            <h1>Our Services</h1>
+            Blogs
         </ProductTitle>
-            <h1> Blog 1</h1>  
-            
-           </TextWrap> */}
            <Button to="/" primary="true" round="true" css={`
            position:"absolute;
            top :420px;
@@ -33,66 +54,19 @@ function Section2 (data) {
            `}>Show More</Button> 
        </ProductInfo>
        </ProductCard>
-       </Carousel.Item>
-        </Carousel>
-
-  
-   )
-    })
-return ServicesArray
-
-}
-
-export default function Ourservices({heading}) {
-    const data= useStaticQuery(
-      graphql`
-query{
-   allFile(
-      filter: {relativeDirectory: {eq: "ourservices"}}
-      sort: {fields: base, order: ASC}
-    ) {
-      edges {
-        node {
-          id
-          base
-          relativePath
-          childImageSharp {
-            gatsbyImageData(
-                height: 480
-                width: 480
-                placeholder: BLURRED
-                quality: 70
-                blurredOptions: {width: 100}
-              )
-          }
-        }
-      }
+      )
+ }) 
+       return ourservicesArray
     }
-}
-`)
-    
+
     console.log(data)
     return (
       <ProductsContainer>
       <ProductsHeading>{heading}</ProductsHeading>
-       <ProductWrapper> {/* style={{display: "flex", flexDirection: "row"}} */}
-      {/* <Carousel
-        index={index}
-        onChange={handleChange}
-        interval={4000}
-        animation="slide"
-        indicators={false}
-        stopAutoPlayOnHover
-        swipe
-        className="my-carousel"
-      > 
-       
-        </Carousel> */}
-         {Section2(data)}
-        </ProductWrapper>
+   <ProductWrapper> {Section2(data)} </ProductWrapper >    {/*style={{display: "flex", flexDirection: "row"}}     */}
       </ProductsContainer>
     )
-    }
+}
     const ProductsContainer = styled.div`
 min-height:100vh;
 padding: 5rem calc((100vw - 1300px)/2);
@@ -109,7 +83,7 @@ color: #000;
 const ProductWrapper = styled.div`
 display: grid;
 grid-template-columns:repeat(4,1fr);
-grid-gap:10px;
+grid-gap:20px;
 justify-items:center;
 padding:0 3rem;
 
@@ -159,7 +133,7 @@ font-size: 1rem;
 margin-left: 1 rem;
 margin-left:0.5rem;
 `
-// const GatsbyImage=styled.div`
+// image=styled.div`
 // height:100%;
 // max-width:100%;
 // position:absolute;
