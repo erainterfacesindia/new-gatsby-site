@@ -9,7 +9,8 @@ import { Button } from "./Button"
 const Header = () => {
   return (
 <Nav>
-<NavLink to="/">Era Interface</NavLink> 
+<NavLink to="/" css={`color:#f26a2e;
+font-size:30px;`}>Era Interface</NavLink> 
             <Bars />
             <NavMenu>
               {menuData.map((item, index) => (
@@ -41,6 +42,7 @@ position: relative;
 `
 const NavLink = styled(Link)`
 color:white;
+font-size:20px;
 display :flex;
 align-items:center;
 text-align: right;

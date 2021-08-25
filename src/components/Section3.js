@@ -1,4 +1,4 @@
- import * as React from "react"
+import * as React from "react"
  import { GatsbyImage } from "gatsby-plugin-image"
  import { graphql } from "gatsby"
  import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,13 +8,14 @@ import {Button} from './Button'
 import { useStaticQuery } from 'gatsby'
 import { push } from "object-path";
 //import { Carousel } from "bootstrap";
+import  "./Style/global.css"
  
-export default function Ourservices({heading}) {
+export default function Ourblogs({heading}) {
   const data= useStaticQuery(
     graphql`
 query{
  allFile(
-    filter: {relativeDirectory: {eq: "ourservices"}}
+    filter: {relativeDirectory: {eq: "ourblogs"}}
     sort: {fields: base, order: ASC}
   ) {
     edges {
@@ -38,25 +39,14 @@ query{
 `)
 
 
-function Section2(data) {
+function Section3(data) {
   const ourservicesArray = []
     data.allFile.edges.map(({node , index}) => { 
       ourservicesArray.push(
         <ProductCard key={index}>
-   
-    <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.base} css={`
-       height:100%;
-       max-width:100%;
-       position:absolute;
-       border-radius:10px;
-       filter:brightness(70%);
-       tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
-       
-       &:hover {
-         filter: brightness(100%)
-       }
+    <GatsbyImage className="blogs"
+    image={node.childImageSharp.gatsbyImageData} alt={node.base}/>
         
-    `}/>
       <ProductInfo>   
       
          <ProductTitle css={`color:white; font-size: 1.3vw;`}>
@@ -64,7 +54,7 @@ function Section2(data) {
         </ProductTitle>
            <Button to="/" primary="true" round="true" css={`
            position:absolute;
-           top :420px;
+           top :330px;
            font-size:14px;
            `}>Show More</Button> 
              
@@ -79,7 +69,7 @@ function Section2(data) {
     return (
       <ProductsContainer>
       <ProductsHeading>{heading}</ProductsHeading>
-   <ProductWrapper> {Section2(data)} </ProductWrapper >    {/*style={{display: "flex", flexDirection: "row"}}     */}
+   <ProductWrapper> {Section3(data)} </ProductWrapper >    {/*style={{display: "flex", flexDirection: "row"}}     */}
       </ProductsContainer>
     )
 }
@@ -88,7 +78,7 @@ min-height:100vh;
 padding: 5rem calc((100vw - 1300px)/2);
 background: white;
 color:#fff;
-background-color: black;
+background-color: #34282C;
 `
 
 const ProductsHeading = styled.div`
@@ -96,10 +86,14 @@ font-size: clamp(1.2rem,5vw,3rem);
 text-align: left;
 margin-bottom: 5rem;
 color: #f26a2e;
+
 `
+// grid-template-columns: 2fr 2fr 2fr;
+//   grid-template-rows: auto;
+//   grid-template-areas: "left right";
 const ProductWrapper = styled.div`
 display: grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns: 2fr 2fr 2fr;
 grid-gap:20px;
 justify-items:center;
 padding:0 3rem;
@@ -120,7 +114,7 @@ width: 100%;
 height: 500px;
 position: relative;
 border-radius: 10px;
-filter: brightness(70%);
+filter: brightness(100%);
 tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
 
 &:hover {
@@ -154,16 +148,5 @@ font-weight: 400;
 font-size: 1rem;
 margin-left: 1 rem;
 margin-left:0.5rem;
-top: 375px;
+top: 275px;
 `
-// const ProductImage=styled(GatsbyImage)`
-// height:100%;
-// max-width:100%;
-// position:absolute;
-// border-radius:10px;
-// filter:brightness(70%);
-// tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
-
-// &:hover {
-//   filter: brightness(100%)
-// }`
