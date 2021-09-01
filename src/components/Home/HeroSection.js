@@ -1,7 +1,7 @@
 import * as React from "react"
 import styled from 'styled-components'
 import { Button } from "../Button"
-import Video from "C:/erainterfaces/uday/new-gatsby-project/src/assets/videos/green.mp4"
+import Video from "../../assets/videos/green.mp4"
 
 
 const HeroSection = () => {

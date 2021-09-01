@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import AboutData from 'C:/erainterfaces/uday/new-gatsby-project/src/data/AboutData'
+import AboutData from '../../data/AboutData'
 
 
 const Section2 = () => {
