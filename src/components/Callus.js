@@ -15,7 +15,7 @@ const Callus = () => {
            @media screen and (max-width: 280px)
            {
                
-               min-width:35px;;
+               min-width:35px;
            }
         
            `}>Callus Now</Button>
@@ -31,7 +31,7 @@ background: #e85555;
 display: flex;
 justify-content:center;
 align-items:center;
-height: 35vh;
+height: 50%;
 padding: 0 1rem;
 position: relative;
 margin-top: -80px;

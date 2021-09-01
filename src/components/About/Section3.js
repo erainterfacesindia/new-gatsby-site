@@ -1,11 +1,11 @@
-import React from 'react'
+// import React from 'react'
 
-const Section3 = () => {
-    return (
-        <div>
+// const Section3 = () => {
+//     return (
+//         <div>
             
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
 
-export default Section3
+// export default Section3
