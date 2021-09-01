@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import AboutData from '../data/AboutData'
+import AboutData from '../../data/AboutData'
 
 
 const AboutSection2 = () => {
@@ -23,27 +23,32 @@ const AboutSection2 = () => {
 }
 const Wrapper = styled.div``
 const AboutElements=styled.div`
-    min-height:50vh;
-    margin-top: 4rem;
+    min-height:40vh;
+    background:#34282C;
+    margin-top: -80px;
+    margin-bottom: 50px;
     justify-content:center;
     align-items:center;
-    padding: 0 1rem;
+    padding: 0rem calc((130vw - 1300px)/2);
     position: relative;
     display: grid;
-    gap: 0rem;
-    grid-gap: 2rem;
+    gap: 4rem;
+    grid-gap: 8rem;
     .icon {
+      
       font-size: 4rem;
-      color: var(--clr-primary-5);
+      color: #f26a2e;
       margin-bottom: 1rem;
     }
     h4 {
+      color: white;
       text-transform: uppercase;
       font-weight: 500;
     }
     p {
-      color: var(--clr-grey-3);
+      color: white;
       max-width: 35em;
+      font-weight: 250;
     }
     @media screen and (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);

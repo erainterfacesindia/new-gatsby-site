@@ -75,7 +75,7 @@ const HeroContent= styled.div`
 z-index: 3;
 height: calc(100vh -80px);
 max-height: 100%;
-paddingL 0rem calc((100vw - 1300px)/2);
+padding: 0rem calc((100vw - 1300px)/2);
 `
 const HeroItems = styled.div`
 display: flex;

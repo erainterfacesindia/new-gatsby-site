@@ -22,9 +22,11 @@ const Contact = () => {
                  Sunday: Closed</p>
             </article>
             <article>
-              <form className="form contact-form"
-                    action="https://formspree.io/f/xyyllene"
-                    method="POST" 
+              <form
+                    name="contact-form"
+                    method="post"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field" 
                     >
                 <div className="form-row">
                   <label htmlFor="name">your name</label>
@@ -60,6 +62,7 @@ const Contact = () => {
       align-items: center;
     }
     form {
+        margin-top:2rem;
         width: 50%;
         background: var(--white);
         border-radius: var(--borderRadius);
