@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import '../Style/global.css'
+import './Style/global.css'
 
 
 
-const Section1 = () => {
+const AboutSection1 = () => {
     return (
         <AboutContainer>
             <ContentWrapper>
@@ -23,7 +23,7 @@ const Section1 = () => {
         </AboutContainer>
     )
             }
-            export default Section1 
+            export default AboutSection1 
         
         
 

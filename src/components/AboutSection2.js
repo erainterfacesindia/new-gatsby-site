@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import AboutData from '../../data/AboutData'
+import AboutData from '../data/AboutData'
 
 
-const Section2 = () => {
+const AboutSection2 = () => {
   return (
     <Wrapper>
       {/* <Title title="about us" /> */}
@@ -50,4 +50,4 @@ const AboutElements=styled.div`
     }
   }
   `
-export default Section2
+export default AboutSection2
