@@ -24,7 +24,7 @@ const Section2 = () => {
 }
 const Wrapper = styled.div``
 const AboutElements=styled.div`
-    min-height:35vh;
+    min-height:50vh;
     margin-top: 4rem;
     justify-content:center;
     align-items:center;
@@ -33,7 +33,7 @@ const AboutElements=styled.div`
     display: grid;
     gap: 0rem;
     grid-gap: 2rem;
-    icon {
+    .icon {
       font-size: 4rem;
       color: var(--clr-primary-5);
       margin-bottom: 1rem;
