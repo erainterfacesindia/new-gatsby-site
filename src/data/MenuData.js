@@ -5,3 +5,7 @@ export const menuData =[
     {title:"Industries", link:"/industries"},
     {title:"Blog", link:"/blog"},
 ]
+
+
+
+

@@ -4,7 +4,7 @@
  import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from "react-bootstrap"
 import styled from "styled-components"
-import {Button} from './Button'
+import {Button} from '../Button'
 import { useStaticQuery } from 'gatsby'
 import { push } from "object-path";
 //import { Carousel } from "bootstrap";

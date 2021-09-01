@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import './Style/global.css'
+import '../Style/global.css'
 
 
 
-const Section4 = ({data}) => {
+const Section4 = () => {
     return (
         <AboutContainer>
             <TitleContainer>About Us</TitleContainer>
-            <SubTitle>Reliable & Cost Efficient Solutioning Company</SubTitle>
+            <SubTitle>Reliable & Cost Efficient Company</SubTitle>
             <ContentWrapper>
             <ColumnOne>
             <Description>
@@ -22,7 +22,7 @@ const Section4 = ({data}) => {
                 
                 </ColumnOne>
                 <ColumnTwo >
-                <img className="about_home" src="/eragif.gif" alt="home_about image" />
+                <img className="about" src="/eragif.gif" alt="home_about image" />
                 </ColumnTwo>
             </ContentWrapper>
         </AboutContainer>
@@ -43,7 +43,7 @@ const TitleContainer=styled.p`
 color:#f26a2e;
 font-size:clamp(1.2rem,5vw,3rem);
 padding-left:2rem;
-margin-bottom: 4rem;
+margin-bottom: 2rem;
 `
 const SubTitle=styled.div`
 text-align:start;
@@ -74,15 +74,14 @@ margin-bottom: 5rem;
 }`
 const ColumnOne=styled.div`
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
 margin-top: -2 rem;
 `
 const ColumnTwo=styled.div`
 display:grid;
-grid-template-columns:repeat(2 , 1fr);
-margin-top: -2 rem;
-grid-gap:30px;
-margin-bottom: 8rem;
+grid-template-columns:1fr 1fr;
+margin-top: 2rem;
+grid-gap:10px;
 
 @media screen and (max-width:500px)
 {

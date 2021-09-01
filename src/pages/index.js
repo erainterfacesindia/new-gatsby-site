@@ -1,11 +1,13 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import Hero from "../components/HeroSection"
-import Section2 from "../components/Section2"
-import Section3 from "../components/Section3"
-import Section4 from "../components/Section4"
+import Hero from "../components/Home/HeroSection"
+import Section2 from "../components/Home/Section2"
+import Section3 from "../components/Home/Section3"
+import Section4 from "../components/Home/Section4"
 import Callus from "../components/Callus"
+//import Sidebar from "../components/Sidebar"
+
 
 
 

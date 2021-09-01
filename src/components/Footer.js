@@ -36,7 +36,7 @@ export default Footer
 const FooterContainer =styled.div`
 padding: 5rem; clac((100vw - 1300px)/2);
 display:grid;
-grid-template-columns:repat(3, 2fr);
+grid-template-columns:repat(3, 1fr);
 color:#fff;
 background:#34282C;
 `
@@ -55,8 +55,8 @@ h1 {
 `
 const FooterLinksWrapper = styled.div`
 display: grid;
-grid-template-columns: repeat(3,2fr);
-grid-gap:30px;
+grid-template-columns: repeat(3,1fr);
+grid-gap:10px;
 
 @media screen and (max-width :820px)
 {

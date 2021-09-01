@@ -1,7 +1,7 @@
 import * as React from "react"
 import styled from 'styled-components'
-import { Button } from "./Button"
-import Video from "../assets/videos/green.mp4"
+import { Button } from "../Button"
+import Video from "C:/erainterfaces/uday/new-gatsby-project/src/assets/videos/green.mp4"
 
 
 const HeroSection = () => {
@@ -13,8 +13,8 @@ const HeroSection = () => {
             </HeroBg> 
             <HeroContent>
                 <HeroItems>
-                <HeroH1>Our Technology-Enabled Solutions</HeroH1>
-                <HeroP>are tailored to meet the demands of individuals & organisations...</HeroP>
+                <HeroH1>Our Technology-Enabled Solutions!</HeroH1>
+                <HeroP>Are tailored to meet the demands of individuals & organisations...</HeroP>
                  <Button primary="true" round="true" big="true" to="/about">Explore More</Button>
                 </HeroItems>
             </HeroContent>

@@ -5,6 +5,7 @@ module.exports = {
     copyright : 'This website is copyright 2021 Era Interfaces pvt ltd.',
   },
   plugins: [
+    // 'gatsby-theme-elements'
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,

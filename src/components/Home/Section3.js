@@ -4,11 +4,11 @@ import * as React from "react"
  import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from "react-bootstrap"
 import styled from "styled-components"
-import {Button} from './Button'
+import {Button} from '../Button'
 import { useStaticQuery } from 'gatsby'
 import { push } from "object-path";
 //import { Carousel } from "bootstrap";
-import  "./Style/global.css"
+import  "../Style/global.css"
  
 export default function Ourblogs({heading}) {
   const data= useStaticQuery(
