@@ -62,7 +62,7 @@ const Navbar =() => {
 export default Navbar
 
 const Nav =styled.nav`
-background:${({active}) => active ? "black":"linear-gradient(to bottom, transparent 0%,transparent 100%)"} ;
+background:${({active}) => active ? "black":"linear-gradient(to bottom, black 0%,black 100%)"} ;
 position: sticky;
 box-sizing: border-box;
 height : 80px;
@@ -99,13 +99,16 @@ align-items: center;
 height:100%;
 
 img{
-    width:250px;
+    width:150px;
 }
 `
 
 export const MobileIcon = styled.div`
 display: none;
- color: #fff;
+ color: #6B6E70;
+ size:2em;
+ margin-top:-1rem;
+ 
 
 @media screen and (max-width: 960px)
 {
@@ -114,8 +117,9 @@ display: none;
    top: 0;
    right: 0;
    transform: translate(-100%, 60%);
-   font-size: 1.5rem;
+   font-size: 1.8rem;
    cursor:pointer;
+   
 }
 
 `
@@ -130,12 +134,15 @@ const NavMenu = styled.ul`
     display: flex;
     flex-direction:column;
     width:100%;
-    height:90vh;
+    height:80vh;
     position:absolute;
     top:${({ click }) => (click ? "100%" : "-1000px")};
     opacity:1;
     transition: all 0.2s ease;
-    background :#fff;
+    background :black;
+    line-height:1rem;
+
+   
   }
  `
  const NavLink = styled(Link)`
@@ -144,9 +151,9 @@ const NavMenu = styled.ul`
  align-items: center;
  text-decoration : none;
  padding: 0.5rem 1rem;
-color: #fff;
+color: white;
 margin-right: 1rem;
-font-size:1.3rem;
+font-size:1rem;
 font-family: "ubuntu", sans-serif;
 text-transform: capitalize;
 letter-spacing: var(--letterSpacing);
@@ -159,7 +166,7 @@ transition: var(--transition);
     display: table;
 
     &:hover {
-        color: #ff4040;
+        border-color:#f262ae;
         transition: all 0.3s ease;
     }
 }

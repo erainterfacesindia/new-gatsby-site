@@ -103,7 +103,7 @@ grid-gap:10px;
 
 @media screen and (max-width: 768px)
 {
-    display:flex;
+    display:grid;
     flex-direction: column;
     padding: 0 1 rem;
 }

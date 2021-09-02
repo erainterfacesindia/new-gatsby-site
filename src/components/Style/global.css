@@ -51,8 +51,8 @@ transition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
 
   .about
   {
-	height: 380px;
-	width: 760px;
+	height: 3800px;
+	width: 650px;
 	border-radius:10px;
 	filter:brightness(100%);
 	transition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
