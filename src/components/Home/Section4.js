@@ -37,7 +37,7 @@ width: 100%;
 background: black;
 color:#fff;
 padding: 5rem clac((100vw - 1300px)/2);
-height:30%;
+height:100vh;
 margin-top: -80px;
 
 :before {
@@ -96,14 +96,15 @@ grid-template-columns:1fr;
 }`
 const ColumnOne=styled.div`
 display:grid;
-grid-template-rows:1 1fr;
+grid-template-rows:1fr 1fr;
 padding:0 2rem;
 margin-top: -80px;
 `
 const ColumnTwo=styled.div`
 display:grid;
-grid-template-columns:1fr 2fr;
-margin-top: 10rem;
+grid-template-columns:1fr 1fr ;
+margin-top: 6rem;
+margin-bottom:7rem;
 grid-gap:10px;
 
 @media screen and (max-width: 768px)
