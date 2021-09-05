@@ -15,7 +15,7 @@ const HeroSection = () => {
             <ContentWrapper>
             <ColumnOne>
             <HeroContent>               
-                <HeroH1>Our Technology-Enabled Solutions!</HeroH1>
+                <HeroH1>Our Technology Enabled Solutions!</HeroH1>
                 <HeroP>Are tailored to meet the demands of individuals & organisations...</HeroP>
                  <Button primary="true" round="true" big="true" to="/about">Explore More</Button>
             </HeroContent>
