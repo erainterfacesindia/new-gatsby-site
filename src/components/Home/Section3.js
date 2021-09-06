@@ -78,7 +78,7 @@ min-height:100vh;
 padding: 5rem calc((100vw - 1300px)/2);
 background: white;
 color:#fff;
-background-color: #34282C;
+background-color: black;
 `
 
 const ProductsHeading = styled.div`

@@ -38,7 +38,7 @@ padding: 5rem; clac((100vw - 1300px)/2);
 display:grid;
 grid-template-columns:repat(3, 1fr);
 color:#fff;
-background:#34282C;
+background:black;
 `
 const FooterDesc = styled.div`
 padding: 0 2rem;
