@@ -166,7 +166,7 @@ transition: var(--transition);
     display: table;
 
     &:hover{
-        border-color:#f262ae;
+        border-color:#f26a2e;
         transition: all 0.3s ease;
     }
 }
