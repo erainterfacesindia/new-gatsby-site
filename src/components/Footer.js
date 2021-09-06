@@ -45,12 +45,12 @@ padding: 0 2rem;
 
 img{
     margin-bottom:2rem;
-    width : 250px;
+    width:250px;
 }
 
 @media screen and (max-width:400px)
 {
-    padding:1 rem;
+    padding:1rem;
 }
 `
 const FooterLinksWrapper = styled.div`
