@@ -165,7 +165,7 @@ transition: var(--transition);
     width:100%;
     display: table;
 
-    &:hover {
+    &:hover{
         border-color:#f262ae;
         transition: all 0.3s ease;
     }

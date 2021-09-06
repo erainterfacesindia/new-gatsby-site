@@ -14,14 +14,10 @@ const Callus = () => {
            margin-top:-15px;
            font-size:1.5rem;
            
-          
-
-           @media screen and (max-width: 280px)
-           {
-               
-            padding:1 rem;
-           }
-        
+           @media screen and (max-width:400px)
+              {
+                min-width:40px;
+               }
           ` }>Callus Now</Button>        
         </CallusContainer>
     )
@@ -81,7 +77,7 @@ const CallusContainer =styled.div`
 background: #e85555;
 justify-content:center;
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:repeat(2,1fr);
 grid-gap:20rem;
 align-items:center;
 height: 23vh;
@@ -96,9 +92,14 @@ h1 {
     font-size: 2.3rem;
     
 }
-@media screen and (max-width :820px)
+@media screen and (max-width: 1200px)
 {
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 868px)
+{
+  grid-template-columns: 1fr;
 }
 }
 `

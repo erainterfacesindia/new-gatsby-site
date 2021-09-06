@@ -24,7 +24,7 @@ const AboutSection2 = () => {
 const Wrapper = styled.div``
 const AboutElements=styled.div`
     min-height:40vh;
-    background:#34282C;
+    background:#454545;
     margin-top: -80px;
     margin-bottom: 50px;
     justify-content:center;

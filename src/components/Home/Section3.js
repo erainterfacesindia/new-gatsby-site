@@ -49,7 +49,7 @@ function Section3(data) {
         
       <ProductInfo>   
       
-         <ProductTitle css={`color:white; font-size: 1.3vw;`}>
+         <ProductTitle css={`color:white; font-size: 1.8vw;`}>
          Our Technology-Enabled Solutions
         </ProductTitle>
            <Button to="/" primary="true" round="true" css={`
@@ -145,8 +145,6 @@ top: 375px;`
 const ProductTitle = styled.div`
 position: absolute;
 font-weight: 400;
-font-size: 1rem;
-margin-left: 1 rem;
-margin-left:0.5rem;
+font-size: 1rem; 
 top: 275px;
 `
