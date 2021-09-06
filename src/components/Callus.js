@@ -19,7 +19,7 @@ const Callus = () => {
            @media screen and (max-width: 280px)
            {
                
-                min-width:50px;
+            padding:1 rem;
            }
         
           ` }>Callus Now</Button>        

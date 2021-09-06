@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <FooterContainer>
             <FooterLinksWrapper>
-                <FooterDesc>
-                    <h1>Era Interfaces</h1>
+                <FooterDesc>  
+                    <img src="/era_logo.png" alt="era-logo"/> 
                     <p>f-22,3rd Cross,Nash-Square,Electronic City Phase 1,Bengaluru, Karnataka 5600100 </p>
                 </FooterDesc>
                 <FooterLinkItems>
@@ -43,9 +43,9 @@ background:#34282C;
 const FooterDesc = styled.div`
 padding: 0 2rem;
 
-h1 {
-    margin-bottom:3rem;
-    color: #f26a2e;
+img{
+    margin-bottom:2rem;
+    width : 250px;
 }
 
 @media screen and (max-width:400px)
