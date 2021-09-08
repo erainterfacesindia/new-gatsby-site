@@ -23,7 +23,7 @@ const Callus = () => {
     )
 }
 
-export default Callus
+export default Callus;
 
 // const CallusContainer = styled.div `
 // width: 100%;

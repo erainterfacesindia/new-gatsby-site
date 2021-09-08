@@ -126,8 +126,8 @@ display: none;
 const NavMenu = styled.ul`
   display: flex;
   align-items: center;
-  margin-right: -48px;
   text-align:center;
+  padding:0;
 
   @media screen and  (max-width: 768px)
   {
@@ -150,7 +150,6 @@ const NavMenu = styled.ul`
  display: flex;
  align-items: center;
  text-decoration : none;
- padding: 0.5rem 1rem;
 color: white;
 margin-right: 1rem;
 font-size:1rem;
@@ -159,7 +158,7 @@ text-transform: capitalize;
 letter-spacing: var(--letterSpacing);
 transition: var(--transition);
 
-@meida scren and (max-width:960px) {
+@meda scren and (max-width:960px) {
     text-align-center;
     padding: 2rem;
     width:100%;
@@ -174,7 +173,7 @@ transition: var(--transition);
 const NavBtn = styled.div`
    display : flex;
    align-items : center;
-   margin-right:  24px;
+   
 
    @media screen and (max-width:768px)
    {

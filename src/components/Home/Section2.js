@@ -2,12 +2,9 @@
  import { GatsbyImage } from "gatsby-plugin-image"
  import { graphql } from "gatsby"
  import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel } from "react-bootstrap"
 import styled from "styled-components"
 import {Button} from '../Button'
 import { useStaticQuery } from 'gatsby'
-import { push } from "object-path";
-//import { Carousel } from "bootstrap";
  
 export default function Ourservices({heading}) {
   const data= useStaticQuery(
@@ -71,24 +68,24 @@ function Section2(data) {
        </ProductInfo>
        </ProductCard>
       )
- }) 
+ })
        return ourservicesArray
     }
 
     console.log(data)
     return (
       <ProductsContainer>
-      <ProductsHeading>{heading}</ProductsHeading>
-   <ProductWrapper> {Section2(data)} </ProductWrapper >    {/*style={{display: "flex", flexDirection: "row"}}     */}
+        <ProductsHeading>{heading}</ProductsHeading>
+        <ProductWrapper>{Section2(data)}</ProductWrapper>
       </ProductsContainer>
     )
 }
     const ProductsContainer = styled.div`
-min-height:100vh;
-padding: 5rem calc((100vw - 1300px)/2);
-background: white;
-color:#fff;
-background-color: black;
+  min-height:100vh;
+  padding: 5rem calc((100vw - 1300px)/2);
+  background: white;
+  color:#fff;
+  background-color: black;
 `
 
 const ProductsHeading = styled.div`
@@ -121,7 +118,7 @@ height: 500px;
 position: relative;
 border-radius: 10px;
 filter: brightness(70%);
-tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
+transition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
 
 &:hover {
   filter: brightness(100%);
@@ -135,7 +132,7 @@ tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
 const ProductInfo = styled.div`
 display: flex;
 flex-direction: column;
-algn-items: flex-start;
+align-items: flex-start;
 padding: 0 2rem;
 
 @media screen and (max-width: 280px)

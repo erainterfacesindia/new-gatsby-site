@@ -96,7 +96,7 @@ display: grid;
 grid-template-columns: 2fr 2fr 2fr;
 grid-gap:20px;
 justify-items:center;
-padding:0 3rem;
+padding:0 10%;
 
 @media screen and (max-width: 1200px)
 {
@@ -115,7 +115,7 @@ height: 500px;
 position: relative;
 border-radius: 10px;
 filter: brightness(100%);
-tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
+transition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
 
 &:hover {
   filter: brightness(100%);
@@ -123,18 +123,18 @@ tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
 
 @media screen and (max-width: 280px)
 {
-  padding:0 1rem;
+  padding:0 10%;
 }`
 
 const ProductInfo = styled.div`
 display: flex;
 flex-direction: column;
-algn-items: flex-start;
+align-items: flex-start;
 padding: 0 2rem;
 
 @media screen and (max-width: 280px)
 {
-  padding:0 1rem;
+  padding:0 10%;
 }`
 
 const TextWrap = styled.div`

@@ -68,7 +68,7 @@ const FooterLinkItems = styled.div`
 display: flex;
 grid-template-columns:1fr 1fr;
 flex-direction:column;
-align-itmes:flex-start;
+align-items:flex-start;
 padding: 1rem 2rem;
 
 @media screen and (max-width: 400px)
