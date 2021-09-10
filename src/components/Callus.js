@@ -6,15 +6,15 @@ import '../components/Style/global.css'
 
 const Callus = () => {
     return (
-      <div class="p-3 mb-2 bg-danger bg-gradient text-white">
+      <div class="p-3 bg-danger bg-gradient text-white">
       <Wrapper>
         <div className={Styles.container + " row"}>
             <div className="col-lg-6 col-sm-12">
               <h1>Next ERA Of Your Business, Start Here.  </h1>
             </div> 
-          <div className="col-lg-6 col-sm-12" css={` padding:20px; `}>
+          <div className="col-lg-6 col-sm-12" css={` padding:10px; `}>
             <Button as="button" type="submit" primary="true" round="true" big="true"css={`
-           font-size:25px;
+           font-size:20px;
            background-color:white;
            color:#f26a2e;
             `}>Callus Now</Button>  

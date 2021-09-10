@@ -46,7 +46,7 @@ li:before {
 }
 
 .about {
-  height: 100%;
+  height: 85%;
   width: 100%;
   border-radius: 10px;
 }
@@ -99,6 +99,10 @@ li:before {
 
 .call {
   background-color: #e85555;
+}
+
+.pad-bottom-md {
+  padding-bottom: 2rem;
 }
 
 /* @media screen and (min-width: 992px) {

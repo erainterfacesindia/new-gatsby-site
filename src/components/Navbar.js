@@ -31,7 +31,6 @@ const Navbar =() => {
 
         return (
                <Nav active={scroll} click={click}>
-                <Wrapper customClassname="row">
                         <NavLogo to="/">
                             <img src="/era_logo.png" alt="era-logo"/> 
                         </NavLogo> 
@@ -49,7 +48,7 @@ const Navbar =() => {
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes />:<FaBars />}
                         </MobileIcon>
-                        </Wrapper>
+                        
                 </Nav>
         )
        
@@ -58,6 +57,7 @@ const Navbar =() => {
 
 export default Navbar
 
+// background: ${({ click }) => (click ? "#fff": "transparent")};
 const Nav =styled.nav`
 background:${({active}) => active ? "black":"linear-gradient(to bottom, black 0%,black 100%)"} ;
 position: sticky;
@@ -67,19 +67,19 @@ display :flex;
 justify-content: space-between;
 font-size:1rem;
 align-items:center;
-/* padding : 0.5rem calc((100vw - 1300px)/2); */
+padding : 0.5rem calc((100vw - 1300px)/2); 
 z-index:999;
 top: 0;
 
 
 @media screen and (max-width :960px) {
-    beckground: ${({ click }) => (click ? "#fff": "transparent")};
+    
     transition: 0.8s all ease;
 }
 `
 export const NavbarContainer = styled.div`
 display: flex;
-justify-content : space-between;
+justify-content:space-between;
 height:80px;
 z-index: 1;
 width: 100%;
@@ -147,6 +147,7 @@ const NavMenu = styled.ul`
  display: flex;
  align-items: center;
  text-decoration : none;
+ justify-content:space-between;
 color: white;
 margin-right: 1rem;
 font-size:1rem;
@@ -155,11 +156,11 @@ text-transform: capitalize;
 letter-spacing: var(--letterSpacing);
 transition: var(--transition);
 
-@media scren and (max-width:960px) {
+@media screen and (max-width:960px) {
     text-align: center;
     padding: 2rem;
     width:100%;
-    display: table;
+    display:table;
 
     &:hover{
         border-color:#f26a2e;

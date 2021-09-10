@@ -9,27 +9,26 @@ const AboutSection2 = () => {
   // Style 
 
   const AboutElements=styled.div`
-    min-height:40vh;
+    height:50vh;
     background:#454545;
-    margin-top: -80px;
-    margin-bottom: 50px;
     justify-content:center;
     align-items:center;
     padding: 0rem calc((130vw - 1300px)/2);
     position: relative;
     display: grid;
-    gap: 4rem;
-    grid-gap: 8rem;
-    .icon {
-      font-size: 4rem;
-      color: #f26a2e;
-      margin-bottom: 1rem;
-    }
+    grid-gap: 4rem;
     h4 {
       color: white;
+      text-align:center;
       text-transform: uppercase;
       font-weight: 500;
     }
+    .icon {
+      font-size: 4rem;
+      color: #f26a2e;
+      text-align: center;
+    }
+    
     p {
       color: white;
       max-width: 35em;
@@ -47,8 +46,9 @@ const AboutSection2 = () => {
         {AboutData.map(({ id, icon, label, text }) => {
           return (
             <article key={id}>
+               <h4>{label}</h4>
               <span>{icon}</span>
-              <h4>{label}</h4>
+             
               <p>{text}</p>
             </article>
           )

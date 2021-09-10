@@ -45,16 +45,17 @@ function Section3(data) {
       ourservicesArray.push(
         <ProductCard key={index}>
     <GatsbyImage className="blogs"
-    image={node.childImageSharp.gatsbyImageData} alt={node.base}/>
+    image={node.childImageSharp.gatsbyImageData} alt={node.base} css={`
+    height:60%;`}/>
         
       <ProductInfo>   
       
-         <ProductTitle css={`color:white; font-size: 1.8vw;`}>
+         <ProductTitle css={`color:white; font-size: 1.3vw;`}>
          Our Technology-Enabled Solutions
         </ProductTitle>
            <Button to="/" primary="true" round="true" css={`
            position:absolute;
-           top :330px;
+           top :220px;
            font-size:14px;
            `}>Show More</Button> 
              
@@ -73,8 +74,7 @@ function Section3(data) {
       </ProductsContainer>
     )
 }
-    const ProductsContainer = styled.div`
-min-height:100vh;
+const ProductsContainer = styled.div`
 padding: 5rem calc((100vw - 1300px)/2);
 background: white;
 color:#fff;
@@ -84,28 +84,24 @@ background-color: black;
 const ProductsHeading = styled.div`
 font-size: clamp(1.2rem,5vw,3rem);
 text-align: left;
-margin-bottom: 5rem;
+padding-bottom: 2rem;
 color: #f26a2e;
-
 `
-// grid-template-columns: 2fr 2fr 2fr;
-//   grid-template-rows: auto;
-//   grid-template-areas: "left right";
 const ProductWrapper = styled.div`
 display: grid;
-grid-template-columns: 2fr 2fr 2fr;
-grid-gap:20px;
+grid-template-columns:repeat(3,1fr);
+grid-gap:10px;
 justify-items:center;
-padding:0 10%;
+padding:0 3rem;
 
 @media screen and (max-width: 1200px)
 {
-  grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (max-width: 868px)
 {
-  grid-template-columns: 1fr;
+grid-template-columns: 1fr;
 }`
 
 const ProductCard = styled.div`
@@ -114,16 +110,16 @@ width: 100%;
 height: 500px;
 position: relative;
 border-radius: 10px;
-filter: brightness(100%);
-transition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
+filter: brightness(70%);
+transition: 0.4s cubic-bezier(0.075,0.82,0.165, 1);
 
 &:hover {
-  filter: brightness(100%);
+filter: brightness(100%);
 }
 
 @media screen and (max-width: 280px)
 {
-  padding:0 10%;
+padding:0 1rem;
 }`
 
 const ProductInfo = styled.div`
@@ -134,7 +130,7 @@ padding: 0 2rem;
 
 @media screen and (max-width: 280px)
 {
-  padding:0 10%;
+padding:0 1rem;
 }`
 
 const TextWrap = styled.div`
@@ -145,6 +141,6 @@ top: 375px;`
 const ProductTitle = styled.div`
 position: absolute;
 font-weight: 400;
-font-size: 1rem; 
-top: 275px;
+font-size: 1rem;
+top: 175px;
 `
