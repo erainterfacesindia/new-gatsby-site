@@ -1,10 +1,10 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import Hero from "../components/Home/HeroSection"
-import Section2 from "../components/Home/Section2"
-import Section3 from "../components/Home/Section3"
-import Section4 from "../components/Home/Section4"
+import Section1 from "../components/Pages/Home/HeroSection/Section1"
+import Section2 from "../components/Pages/Home/Section2"
+import Section3 from "../components/Pages/Home/Section3"
+import Section4 from "../components/Pages/Home/AboutCompany/Section4"
 import Callus from "../components/Callus"
 //import Sidebar from "../components/Sidebar"
 
@@ -13,7 +13,7 @@ import Callus from "../components/Callus"
 
 const IndexPage = ({data}) => (
   <Layout>
-    <Hero/>
+    <Section1/>
     <Section2 heading="Our Services"/>
     <Section3 heading="Our Blogs"/>
     <Section4 />

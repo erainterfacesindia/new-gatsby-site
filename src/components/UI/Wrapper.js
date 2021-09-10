@@ -1,12 +1,10 @@
-import {styles} from 'styled-components';
+import React from 'react'
+import * as wrapperStyle from '../UI/Wrapper.module.css';
+
+
 
 const Wrapper = props => {
-
-    const wrapperStyles = `
-        padding: 0 10%;
-    `
-
-    return <div>{props.children}</div>
+    return (<div className={`${wrapperStyle.wrapperDiv} ${props.customClassname}`}>{props.children}</div>);
 }
 
-export default Wrapper;
+export default Wrapper

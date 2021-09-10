@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import '../Style/global.css'
+import '../../Style/global.css'
 
 
 
@@ -49,8 +49,6 @@ margin-bottom: -90px;
         rgba(0, 0, 0, 0.6)100%),
         linear-gradient (
             180deg, rgba(0, 0, 0, 0.2)0%, black 100%);
-    )
-
 }
 `
 const SubTitle=styled.div`
@@ -59,7 +57,6 @@ const SubTitle=styled.div`
     margin-bottom:2rem;
     font-size:2rem;
     font-weight:bold;
-}
 `
 const TitleContainer=styled.div`
 color:#f26a2e;

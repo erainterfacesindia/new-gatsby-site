@@ -1,17 +1,21 @@
- import * as React from "react"
+import * as React from "react"
  import { GatsbyImage } from "gatsby-plugin-image"
  import { graphql } from "gatsby"
  import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from "react-bootstrap"
 import styled from "styled-components"
-import {Button} from '../Button'
+import {Button} from '../../Button'
 import { useStaticQuery } from 'gatsby'
+import { push } from "object-path";
+//import { Carousel } from "bootstrap";
+import  "../../Style/global.css"
  
-export default function Ourservices({heading}) {
+export default function Ourblogs({heading}) {
   const data= useStaticQuery(
     graphql`
 query{
  allFile(
-    filter: {relativeDirectory: {eq: "ourservices"}}
+    filter: {relativeDirectory: {eq: "ourblogs"}}
     sort: {fields: base, order: ASC}
   ) {
     edges {
@@ -35,57 +39,46 @@ query{
 `)
 
 
-function Section2(data) {
+function Section3(data) {
   const ourservicesArray = []
     data.allFile.edges.map(({node , index}) => { 
       ourservicesArray.push(
         <ProductCard key={index}>
-   
-    <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.base} css={`
-       height:100%;
-       max-width:100%;
-       position:absolute;
-       border-radius:10px;
-       filter:brightness(70%);
-       tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
-       
-       &:hover {
-         filter: brightness(100%)
-       }
+    <GatsbyImage className="blogs"
+    image={node.childImageSharp.gatsbyImageData} alt={node.base}/>
         
-    `}/>
       <ProductInfo>   
       
-         <ProductTitle css={`color:white; font-size: 1.3vw;`}>
+         <ProductTitle css={`color:white; font-size: 1.8vw;`}>
          Our Technology-Enabled Solutions
         </ProductTitle>
            <Button to="/" primary="true" round="true" css={`
            position:absolute;
-           top :420px;
+           top :330px;
            font-size:14px;
            `}>Show More</Button> 
              
        </ProductInfo>
        </ProductCard>
       )
- })
+ }) 
        return ourservicesArray
     }
 
     console.log(data)
     return (
       <ProductsContainer>
-        <ProductsHeading>{heading}</ProductsHeading>
-        <ProductWrapper>{Section2(data)}</ProductWrapper>
+      <ProductsHeading>{heading}</ProductsHeading>
+   <ProductWrapper> {Section3(data)} </ProductWrapper >    {/*style={{display: "flex", flexDirection: "row"}}     */}
       </ProductsContainer>
     )
 }
     const ProductsContainer = styled.div`
-  min-height:100vh;
-  padding: 5rem calc((100vw - 1300px)/2);
-  background: white;
-  color:#fff;
-  background-color: black;
+min-height:100vh;
+padding: 5rem calc((100vw - 1300px)/2);
+background: white;
+color:#fff;
+background-color: black;
 `
 
 const ProductsHeading = styled.div`
@@ -93,13 +86,17 @@ font-size: clamp(1.2rem,5vw,3rem);
 text-align: left;
 margin-bottom: 5rem;
 color: #f26a2e;
+
 `
+// grid-template-columns: 2fr 2fr 2fr;
+//   grid-template-rows: auto;
+//   grid-template-areas: "left right";
 const ProductWrapper = styled.div`
 display: grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns: 2fr 2fr 2fr;
 grid-gap:20px;
 justify-items:center;
-padding:0 3rem;
+padding:0 10%;
 
 @media screen and (max-width: 1200px)
 {
@@ -117,7 +114,7 @@ width: 100%;
 height: 500px;
 position: relative;
 border-radius: 10px;
-filter: brightness(70%);
+filter: brightness(100%);
 transition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
 
 &:hover {
@@ -126,7 +123,7 @@ transition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
 
 @media screen and (max-width: 280px)
 {
-  padding:0 1rem;
+  padding:0 10%;
 }`
 
 const ProductInfo = styled.div`
@@ -137,7 +134,7 @@ padding: 0 2rem;
 
 @media screen and (max-width: 280px)
 {
-  padding:0 1rem;
+  padding:0 10%;
 }`
 
 const TextWrap = styled.div`
@@ -148,19 +145,6 @@ top: 375px;`
 const ProductTitle = styled.div`
 position: absolute;
 font-weight: 400;
-font-size: 1rem;
-margin-left: 1 rem;
-margin-left:0.5rem;
-top: 375px;
+font-size: 1rem; 
+top: 275px;
 `
-// const ProductImage=styled(GatsbyImage)`
-// height:100%;
-// max-width:100%;
-// position:absolute;
-// border-radius:10px;
-// filter:brightness(70%);
-// tranisition: 0.4s cubic-bazier(0.075,0.82,0.165, 1);
-
-// &:hover {
-//   filter: brightness(100%)
-// }`

@@ -5,6 +5,8 @@ import styled from 'styled-components'
 import {Link} from 'gatsby'
 import { Button } from "./Button"
 import './Style/global.css' 
+import Wrapper from '../components/UI/Wrapper'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Navbar =() => {
@@ -27,33 +29,28 @@ const Navbar =() => {
          changeNav()
          window.addEventListener("scroll", changeNav)},[])
 
-    //  let navbarClasses=['navbar'];
-            //  if(scroll){
-    //           navbarClasses.push('scroll');
-    //        }
-
         return (
-               <Nav  active={scroll} click={click}> {/* */}
+               <Nav active={scroll} click={click}>
+                <Wrapper customClassname="row">
                         <NavLogo to="/">
                             <img src="/era_logo.png" alt="era-logo"/> 
                         </NavLogo> 
-                        <NavMenu onClick={handleClick} click={click} >{/*  */}                
+                        <NavMenu onClick={handleClick} click={click} >               
                {menuData.map((item, index) => (
                   <NavLink to={item.link} key={index}>
                     {item.title}
                   </NavLink>
                  
-              ))}
-               
-               <NavBtn>
-               <Button primary="true" round="true" to="/contact">Contact Now</Button>
-            </NavBtn>
+              ))} 
+                <NavBtn>
+                    <Button primary="true" round="true" to="/contact">Contact Now</Button>
+                </NavBtn>
               </NavMenu>
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes />:<FaBars />}
                         </MobileIcon>
+                        </Wrapper>
                 </Nav>
-            
         )
        
     
@@ -70,7 +67,7 @@ display :flex;
 justify-content: space-between;
 font-size:1rem;
 align-items:center;
-padding : 0.5rem calc((100vw - 1300px)/2);
+/* padding : 0.5rem calc((100vw - 1300px)/2); */
 z-index:999;
 top: 0;
 
@@ -158,8 +155,8 @@ text-transform: capitalize;
 letter-spacing: var(--letterSpacing);
 transition: var(--transition);
 
-@meda scren and (max-width:960px) {
-    text-align-center;
+@media scren and (max-width:960px) {
+    text-align: center;
     padding: 2rem;
     width:100%;
     display: table;

@@ -1,28 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import AboutData from '../../data/AboutData'
+import AboutData from '../../../data/AboutData'
+import Wrapper from '../../UI/Wrapper'
 
 
 const AboutSection2 = () => {
-  return (
-    <Wrapper>
-      {/* <Title title="about us" /> */}
-      <AboutElements>
-        {AboutData.map(({ id, icon, label, text }) => {
-          return (
-            <article key={id}>
-              <span>{icon}</span>
-              <h4>{label}</h4>
-              <p>{text}</p>
-            </article>
-          )
-        })}
-      </AboutElements>
-    </Wrapper>
-  )
-}
-const Wrapper = styled.div``
-const AboutElements=styled.div`
+
+  // Style 
+
+  const AboutElements=styled.div`
     min-height:40vh;
     background:#454545;
     margin-top: -80px;
@@ -35,7 +21,6 @@ const AboutElements=styled.div`
     gap: 4rem;
     grid-gap: 8rem;
     .icon {
-      
       font-size: 4rem;
       color: #f26a2e;
       margin-bottom: 1rem;
@@ -53,6 +38,23 @@ const AboutElements=styled.div`
     @media screen and (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
   `
-export default AboutSection2
+
+  return (
+    <Wrapper>
+      {/* <Title title="about us" /> */}
+      <AboutElements>
+        {AboutData.map(({ id, icon, label, text }) => {
+          return (
+            <article key={id}>
+              <span>{icon}</span>
+              <h4>{label}</h4>
+              <p>{text}</p>
+            </article>
+          )
+        })}
+      </AboutElements>
+    </Wrapper>
+  )
+}
+export default AboutSection2;

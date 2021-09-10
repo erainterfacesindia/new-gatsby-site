@@ -1,18 +1,17 @@
 import React from 'react'
-import AboutSection1 from '../components/About/AboutSection1'
-import AboutSection2 from '../components/About/AboutSection2'
+import AboutSection1 from '../components/Pages/About/AboutSection1'
+import AboutSection2 from '../components/Pages/About/AboutSection2'
 import Callus from '../components/Callus'
 import Layout from "../components/Layout"
 import '../components/Style/global.css'
 
 const about = () => {
-    return (
+return (
         <Layout>
-        <AboutSection1 />
-        <AboutSection2 />
-        <Callus />
-            
-</Layout>
+            <AboutSection1 />
+            <AboutSection2 />
+            <Callus />
+        </Layout>
     )
 }
 
