@@ -62,9 +62,9 @@ const Nav =styled.nav`
 background:${({active}) => active ? "black":"linear-gradient(to bottom, black 0%,black 100%)"} ;
 position: sticky;
 box-sizing: border-box;
-height : 80px;
-display :flex;
-justify-content: space-between;
+height:80px;
+display:flex;
+justify-content:space-between;
 font-size:1rem;
 align-items:center;
 padding : 0.5rem calc((100vw - 1300px)/2); 
@@ -122,7 +122,8 @@ display: none;
 `
 const NavMenu = styled.ul`
   display: flex;
-  align-items: center;
+  align-items:center;
+  justify-content:space-between;
   text-align:center;
   padding:0;
 
