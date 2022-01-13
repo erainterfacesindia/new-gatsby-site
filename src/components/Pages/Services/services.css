@@ -1,4 +1,4 @@
-  .header::first-letter {
+.header::first-letter {
     color: red;
   }
   .header {
