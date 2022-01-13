@@ -1,26 +1,46 @@
 import React from 'react'
 import {Button} from './Button'
-import Wrapper from '../components/UI/Wrapper'
-import * as Styles from '../components/Pages/Home/HeroSection/Section1.module.css'
 import '../components/Style/global.css'
+import './Callus.css'
 
 const Callus = () => {
     return (
-      <div class="p-3 bg-danger bg-gradient text-white">
-      <Wrapper>
-        <div className={Styles.container + " row"}>
-            <div className="col-lg-6 col-sm-12">
-              <h1>Next ERA Of Your Business, Start Here.  </h1>
+      <div class="callbg">
+      <div class="container-fluid flex-wrap flex-md-nowrap py-5 uipad" style={{padding:"0 5%"}}>
+        <div class="row">
+            <div className="col-lg-7 col-sm-12">
+              <h4>Let us help you in finding the right framework for your organization.  </h4>
             </div> 
-          <div className="col-lg-6 col-sm-12" css={` padding:10px; `}>
-            <Button as="button" type="submit" primary="true" round="true" big="true"css={`
+          <div className="col-lg-5 col-sm-12 text-lg-end" >
+            {/* <div class="btn bg-white text-danger px-4" to="" >Connect Now</div> */}
+            <a href="/contact" class="btn bg-white text-danger px-4">Connect Now</a> 
+            {/* <Button to="/contact"  primary="true"  css={`
            font-size:20px;
-           background-color:white;
+           max-width:100%;
+           background:white;
            color:#f26a2e;
-            `}>Callus Now</Button>  
-        </div>      
+            `}>Callus Now</Button>   */}
+            {/* <div id="contact">
+                <form action="#">
+                   <ul>
+                     <h1>Contact</h1>
+                       <li>
+                         <input type="text" name="name" id="name" placeholder="&#xf2c0; Full name"/>
+                         <input type="email" name="email" id="email" placeholder="&#xf003; Email"/>
+                       </li>
+                       <li>
+                         <textarea name="message" id="message" placeholder="&#xf040; Your message"></textarea>
+                      </li>
+                      <li>
+                        <input type="submit" value="Send message" class="btn" id="submit"/>
+                      </li>
+                    </ul>
+                 </form>
+           </div> */}
+        </div>    
+        </div>  
       </div>
-      </Wrapper>
+      
       </div>
     )
 }
@@ -128,4 +148,3 @@ export default Callus
 // //  }
 
 // // `
- 

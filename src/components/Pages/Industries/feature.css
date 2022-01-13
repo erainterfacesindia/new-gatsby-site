@@ -1,0 +1,32 @@
+.featureh3{
+    color: #f26a2e;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:3rem;
+    padding-bottom:2rem ; 
+  }
+  
+  /* .abouth3 {
+    color: #f26a2e;
+    text-transform: uppercase;
+    padding-bottom:10px ;
+    padding-top:20px;
+  } */
+  .abouticon {
+    font-size: 4rem;
+    color: #f26a2e;
+    text-align:center;
+    width:100%;
+  }
+  
+  .aboutp {
+    color: white;
+    font-weight: 250;
+    padding-top: 10px;
+    
+  }
+  .images{
+      height:40%;
+      width: 100%;
+
+  }

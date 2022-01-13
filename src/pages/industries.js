@@ -1,16 +1,21 @@
-import React from 'react'
-import FeatureSection from '../components/Pages/Industries/FeatureSection'
-import Callus from '../components/Callus'
+import * as React from "react"
 import Layout from "../components/Layout"
+import FeatureSection from '../components/Pages/Industries/FeatureSection'
+import Industry from '../components/Pages/Industries/Industry'
+import Callus from "../components/Callus"
 import '../components/Style/global.css'
+import SEO from '../components/SEO'
 
-const industries= () => {
+
+const Industries= () => {
 return (
-        <Layout>
-            <FeatureSection />
+    <Layout>
+            <SEO title="Industries" />
+            {/* <FeatureSection /> */}
+            <Industry />
             <Callus />
         </Layout>
     )
 }
 
-export default industries
+export default Industries

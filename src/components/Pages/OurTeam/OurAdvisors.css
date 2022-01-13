@@ -1,0 +1,48 @@
+.advisors{  
+    display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;  
+  font: 500 100%/1.5 system-ui;
+}
+
+
+.advisors-text{
+    background-color: white;
+    color:black;
+    width: 100%;
+    border: 15px solid white;
+    padding: 12px;
+    
+}
+.advisors img {
+    max-width: 100%;
+   max-height: auto;
+  }
+
+@media (max-width: 650px) {
+    .advisors {
+        display: block;
+        font-size: 80%;
+    }
+    .advisors p {
+      position: relative;
+      /* margin: -3rem 0 2rem 1rem;
+      padding: 1rem; */
+      background: rgba(grey, 0.8);
+      text-align: start;
+    } 
+  }
+
+.text{
+  display:inline-block;
+  
+}
+
+.read-or-hide{
+  color:rgb(192,192,192);
+  cursor:pointer;
+}

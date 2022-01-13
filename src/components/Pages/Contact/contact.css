@@ -1,0 +1,288 @@
+.contactpad{
+    padding:0 5%;
+}
+
+
+
+.contactHeader
+{
+text-align:flex-start;
+
+/* padding-left:0 1rem; */
+padding-bottom:2rem;
+padding: 0 2rem;
+font-size:2rem;
+}
+
+.contactParagraph
+{
+    font-size: 0.5rem;
+}
+
+.wrapper {
+    height: 100vh;
+    background: #000;
+    background: url("https://i.imgur.com/g63vXfd.jpg");
+    background-size: cover;
+    width: 100%
+}
+
+
+.address {
+    margin-top: 14px !important;
+    margin-left: 10px
+}
+
+.address span {
+    color: #7B1FA2
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.icons i {
+    font-size: 20px
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*7));
+    }
+}
+.slider{
+    height:auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider .slide-track{
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14); 
+    height: 100%;
+}
+
+.slider .slide{
+    height: 100px;
+    width: 250px;
+}
+
+.clientprofile {
+    /* flex-basis: 260px;  */
+    /* margin: 20px 80px; */
+  } 
+  
+  .clientprofile .clientprofile-img {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+  }
+  .clientprofile .clientprofile-director {
+      height: 260px;
+      width: 260px;
+      border-radius: 50%;
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: 400ms;
+    }
+    
+  
+  .clientprofile ul {
+      margin:0;
+      padding:20px 0;
+      position:absolute;
+      z-index: 1;
+      bottom: 0;
+      display: block;
+      left: 50%;
+      transform: translateX(50%);
+      opacity: 0;
+  
+  }
+  
+  .clientprofile ul li {
+       width: 30px;
+       height: 30px;
+       border: 1px solid #fff;
+       border-radius: 50%;
+       margin: 3px;
+       padding:7px;
+       display: inline-block;
+  }
+  
+  .clientprofile a{
+      color: #fff;
+  }
+  
+  .clientprofile:hover ul{
+      opacity: 1;
+  }
+  
+  .clientprofile:hover .clientprofile-img {
+    filter: grayscale(0);
+  }
+  
+  .user-name {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+  
+  .clientprofile h5 {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #ccc;
+  }
+  
+  .clientprofile p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  
+  @media only screen and (max-width: 1400px) {
+    .clientprofiles {
+      flex-direction: column;
+    }
+  
+    .clientprofile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .clientprofile p {
+      text-align: center;
+      margin: 20px 60px 80px 60px;
+      font-size: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .heading {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+    }
+  
+    .heading span {
+      font-size: 15px;
+    }
+  
+    .clientprofiles {
+      margin: 20px 0;
+    }
+  
+    .clientprofile p {
+      margin: 20px 10px 80px 10px;
+    }
+  }
+  
+  .clientheader{
+      padding-bottom: 30px;
+      text-align: center;
+  }
+  
+  @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.contact2 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+	padding: 150px 0;
+  background-position: center top;
+  background-color: black;
+}
+
+.contact2 h1,
+.contact2 h2,
+.contact2 h3,
+.contact2 h4,
+.contact2 h5,
+.contact2 h6 {
+  color: #3e4555;
+}
+
+/* .contact2 .font-weight-medium {
+  font-weight: 300;
+} */
+
+.contact2 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+
+
+
+.contact2 .bg-image {
+  background-size: cover;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.contact2 .card.card-shadow {
+    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.contact2 .detail-box .round-social {
+  margin-top: 100px;
+}
+
+.contact2 .round-social a {
+  background: transparent;
+  margin: 0 7px;
+  padding: 11px 12px;
+}
+
+.contact2 .contact-container .links a {
+  color: #8d97ad;
+}
+
+.contact2 .contact-container {
+  position: relative;
+  top: 200px;
+}
+
+.btn-danger-gradiant {
+  background: #ff4d7e;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+}
+
+ .contact2 .btn-danger-gradiant:hover {
+  background: #ff6a5b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
+  background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+  background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+  background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+}

@@ -1,0 +1,60 @@
+.hero{
+    position: relative;
+}
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .hero-text {
+    position: absolute;
+    bottom:0px;
+    padding: 0 4%;
+  }
+
+  /* @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500); */
+.service-22 {
+  /* font-family: "Montserrat", sans-serif;
+	color: #8d97ad; */
+  color:#fff;
+  font-weight: 400;
+}
+
+.service-22 h1, .service-22 h2, .service-22 h3, .service-22 h4, .service-22 h5, .service-22 h6 {
+  color:#fff;
+}
+
+.service-22 .font-weight-medium {
+	font-weight: 500;
+}
+
+.service-22 .wrap-service-22 {
+  margin-top: 60px;
+}
+
+.service-22 .wrap-service-22 .text-box {
+  padding: 0 30px;
+}
+
+.service-22 .wrap-service-22 .text-box h3 {
+  margin: 10px 0 25px 0;
+}
+
+
+.service-22 .text-megna {
+	color: #1dc8cd;
+}
+
+/* .service-22 .img-shadow {
+    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.3);
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.3);
+} */
+
+.container{
+  margin:0px 0px;
+  margin-top: 0px;
+}

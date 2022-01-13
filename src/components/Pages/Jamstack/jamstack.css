@@ -1,0 +1,27 @@
+.header-line{
+   font-size: 3rem; 
+   position: relative;
+   color: rgb(253,50,102);
+   text-align: center;
+   padding: 2rem!important;
+   padding-top: 30rem; 
+   text-align: center;
+   /* line-height: 7rem;  */
+}
+   @media screen and (min-width:80em) {
+    .header-line{
+        font-size:7em;
+        }
+   }
+
+   @media screen and (min-width:45em) {
+    .header-line{
+        font-size:6em;
+        }
+}
+
+@media screen and (min-width:8em) {
+    .header-line{
+    font: size 2px;
+    }
+}
