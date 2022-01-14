@@ -19,7 +19,7 @@ const internships = () => {
               </h2> 
         <div class="col-md-12 mb40">
         <article class=" text-center"> 
-                <StaticImage src="/recruitment1.jpg" alt="" class=" img-fluid" style={{height:"500px",width:"100%",objectFit:"cover"}}/>
+                <StaticImage src="" alt="" class=" img-fluid" style={{height:"500px",width:"100%",objectFit:"cover"}}/>
                 
                 <div>
                     <h3 class="py-4">A smart template that works 24/7 for your company</h3>
