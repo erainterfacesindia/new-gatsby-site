@@ -3,9 +3,8 @@ import Callus from "../components/Callus"
 import FeatureSection from '../components/Pages/Industries/FeatureSection'
 import Industry from '../components/Pages/Industries/Industry'
 import Layout from "../components/Layout"
-import '../components/Style/global.css'
 import SEO from '../components/SEO'
-
+import '../components/Style/global.css'
 
 const Industries= () => {
 return (

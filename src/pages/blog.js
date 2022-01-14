@@ -6,10 +6,9 @@ import Layout from '../components/Layout'
 import { Badge } from 'react-bootstrap'
 import { Link, graphql} from 'gatsby'
 import SEO from '../components/SEO'
-import '../components/Pages/Blogs/blogs.css'
 import { stripHtml } from "string-strip-html"
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image'
-
+import '../components/Pages/Blogs/blogs.css'
 
 
 const BlogSection = ({ data }) => {

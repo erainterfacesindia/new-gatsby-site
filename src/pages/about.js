@@ -4,8 +4,8 @@ import AboutSection2 from '../components/Pages/About/AboutSection2'
 import AboutSection3 from '../components/Pages/About/AboutSection3'
 import Callus from '../components/Callus'
 import Layout from "../components/Layout"
-import '../components/Style/global.css'
 import SEO from '../components/SEO'
+import '../components/Style/global.css'
 
 const about = () => {
 return (

@@ -1,9 +1,10 @@
 import React from 'react'
 import Callus from '../components/Callus'
 import Layout from "../components/Layout"
-import '../components/Style/global.css'
 import SEO from '../components/SEO'
 import ServicesSection from '../components/Pages/Services/ServicesSection'
+import '../components/Style/global.css'
+
 
 const Services= () => {
 return (

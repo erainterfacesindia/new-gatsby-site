@@ -49,6 +49,7 @@
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
+    "mini-css-extract-plugin": "^2.4.7",
     "prettier": "2.3.2"
   },
   "repository": {
