@@ -1,11 +1,11 @@
 import React ,{useState} from 'react'
+import Callus from "../components/Callus"
 //import OurblogData from  '../../../data/ourblogs'
 // import {Button} from '../../Button'
+import Layout from '../components/Layout'
 import { Badge } from 'react-bootstrap'
 import { Link, graphql} from 'gatsby'
 import SEO from '../components/SEO'
-import Layout from '../components/Layout'
-import Callus from "../components/Callus"
 import '../components/Pages/Blogs/blogs.css'
 import { stripHtml } from "string-strip-html"
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image'

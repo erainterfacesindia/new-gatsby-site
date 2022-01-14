@@ -1,8 +1,8 @@
 import * as React from "react"
-import Layout from "../components/Layout"
+import Callus from "../components/Callus"
 import FeatureSection from '../components/Pages/Industries/FeatureSection'
 import Industry from '../components/Pages/Industries/Industry'
-import Callus from "../components/Callus"
+import Layout from "../components/Layout"
 import '../components/Style/global.css'
 import SEO from '../components/SEO'
 

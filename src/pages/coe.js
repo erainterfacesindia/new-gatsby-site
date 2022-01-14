@@ -1,8 +1,8 @@
 import React from 'react'
-import Coesection2 from '../components/Pages/Coe/Coesection2'
-import SEO from '../components/SEO'
-import Layout from "../components/Layout"
 import CoeSection1 from '../components/Pages/Coe/CoeSection1'
+import Coesection2 from '../components/Pages/Coe/Coesection2'
+import Layout from "../components/Layout"
+import SEO from '../components/SEO'
 
 const coe = () => {
     return (
