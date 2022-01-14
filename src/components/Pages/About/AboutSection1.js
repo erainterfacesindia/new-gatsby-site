@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import '../../Style/global.css'
 import Wrapper from '../../UI/Wrapper'
 import * as Styles from '../Home/AboutCompany/Section4.module.css'
 import { Badge } from 'react-bootstrap'
 import "./about.css"
+import '../../Style/global.css'
 import video1 from '../../Assets/videos/ERA.mp4'
 import { useStaticQuery, graphql } from 'gatsby'
 

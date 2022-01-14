@@ -1,10 +1,10 @@
 import React ,{useState} from 'react'
-import './blogs.css'
-import OurblogData from  '../../../data/ourblogs'
 import {Button} from '../../Button'
 import { Badge } from 'react-bootstrap'
 import { Link } from 'gatsby'
+import OurblogData from  '../../../data/ourblogs'
 import { StaticImage } from 'gatsby-plugin-image'
+import './blogs.css'
 
 
 

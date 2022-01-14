@@ -1,16 +1,15 @@
 import * as React from "react"
-import Layout from "../../components/Layout"
-import '../../components/Style/global.css'
-import Wrapper from '../../components/UI/Wrapper'
 import { Badge } from 'react-bootstrap'
-import SEO from '../../components/SEO'
 import fimg1 from '../../images/blogs/emoji.gif'
 // import fimg2 from '../../images/blogs/skeleton.webp'
 // import fimg3 from '../../images/blogs/user-experience.gif'
 import fimg4 from '../../images/blogs/SimilarMadeup.gif'
 import fimg5 from '../../images/blogs/cinderella-fairy-godmother.gif'
+import Layout from "../../components/Layout"
+import SEO from '../../components/SEO'
 import { StaticImage } from "gatsby-plugin-image"
-
+import Wrapper from '../../components/UI/Wrapper'
+import '../../components/Style/global.css'
 
 
 const flutter = () => {

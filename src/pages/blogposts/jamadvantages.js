@@ -1,9 +1,5 @@
 import * as React from "react"
-import Layout from "../../components/Layout"
-import '../../components/Style/global.css'
-import Wrapper from '../../components/UI/Wrapper'
 import { Badge } from 'react-bootstrap'
-import SEO from '../../components/SEO'
 import jamimg1 from '../../images/blogs/happy.gif'
 import jamimg2 from '../../images/blogs/skeleton.webp'
 import jamimg3 from '../../images/blogs/user-experience.gif'
@@ -11,7 +7,10 @@ import jamimg4 from '../../images/blogs/header.gif'
 import jamimg5 from '../../images/blogs/money-animated.gif'
 import jamimg6 from '../../images/blogs/really-smart.gif'
 import jamimg7 from '../../images/blogs/running.gif'
-
+import Layout from "../../components/Layout"
+import SEO from '../../components/SEO'
+import Wrapper from '../../components/UI/Wrapper'
+import '../../components/Style/global.css'
 
 const jamadvantages = () => {
     return (

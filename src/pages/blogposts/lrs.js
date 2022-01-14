@@ -1,10 +1,9 @@
 import * as React from "react"
-import Layout from "../../components/Layout"
-import '../../components/Style/global.css'
 import { Badge } from 'react-bootstrap'
-import SEO from '../../components/SEO'
 import blogimage6 from '../../images/blogs/learningrecord.jpeg'
-
+import Layout from "../../components/Layout"
+import SEO from '../../components/SEO'
+import '../../components/Style/global.css'
 
 const blog4 = () => {
     return (

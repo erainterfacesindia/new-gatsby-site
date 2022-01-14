@@ -1,7 +1,8 @@
 import React from 'react'
+import { Badge } from 'react-bootstrap'
 import {BiNotepad} from "react-icons/bi"
 import { MdLocalPhone } from 'react-icons/md'
-import { Badge } from 'react-bootstrap'
+
 
 const CoeSection1 = () => {
     return (

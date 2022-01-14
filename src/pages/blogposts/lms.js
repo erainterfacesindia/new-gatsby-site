@@ -1,9 +1,9 @@
 import * as React from "react"
-import Layout from "../../components/Layout"
-import '../../components/Style/global.css'
 import { Badge } from 'react-bootstrap'
-import SEO from '../../components/SEO'
 import blogimage3 from '../../images/blogs/codepractice.webp'
+import Layout from "../../components/Layout"
+import SEO from '../../components/SEO'
+import '../../components/Style/global.css'
 
 
 const blog3 = () => {

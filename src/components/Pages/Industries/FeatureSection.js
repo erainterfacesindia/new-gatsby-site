@@ -1,8 +1,7 @@
 import React from 'react'
-import Wrapper from '../../UI/Wrapper';
-import * as Styles from './FeatureSection.module.css'
-import Card from 'react-bootstrap/Card'
 import Badge from 'react-bootstrap/Badge'
+import Card from 'react-bootstrap/Card'
+import * as Styles from './FeatureSection.module.css'
 import {
     GiGraduateCap,
     GiShoppingCart,
@@ -10,6 +9,7 @@ import {
     GiHeartBeats,
   } from "react-icons/gi"
   import { FaUsers } from "react-icons/fa";
+  import Wrapper from '../../UI/Wrapper'
   import "./feature.css"
   import '../../Style/global.css'
 

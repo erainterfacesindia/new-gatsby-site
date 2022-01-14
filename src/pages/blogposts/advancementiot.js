@@ -1,9 +1,5 @@
 import * as React from "react"
-import Layout from "../../components/Layout"
-import '../../components/Style/global.css'
-import Wrapper from '../../components/UI/Wrapper'
 import { Badge } from 'react-bootstrap'
-import SEO from '../../components/SEO'
 import blogcoverimage from '../../images/blogs/iot_cover.png'
 import img1 from '../../images/blogs/vccircle.gif'
 import img2 from '../../images/blogs/springerlink.png'
@@ -11,6 +7,10 @@ import img3 from '../../images/blogs/dribble.gif'
 import img4 from '../../images/blogs/unlimitedpower.gif'
 import img5 from '../../images/blogs/X0XF.gif'
 import img6 from '../../images/blogs/tensorflow.gif'
+import Layout from "../../components/Layout"
+import SEO from '../../components/SEO'
+import Wrapper from '../../components/UI/Wrapper'
+import '../../components/Style/global.css'
 
 
 const advancementiot = () => {

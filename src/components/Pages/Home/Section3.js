@@ -1,12 +1,12 @@
 import React ,{useState} from 'react'
-import './section3.css'
-import OurblogData from '../../../data/ourblogs'
 import {Button} from '../../Button'
 import { Badge } from 'react-bootstrap'
-import '../../Style/global.css'
+import OurblogData from '../../../data/ourblogs'
 import { stripHtml } from "string-strip-html"
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image'
 import { Link, graphql,useStaticQuery} from 'gatsby'
+import './section3.css'
+import '../../Style/global.css'
 
 export default function Section3() {
     const data= useStaticQuery(graphql`

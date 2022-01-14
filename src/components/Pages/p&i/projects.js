@@ -1,8 +1,8 @@
 import React from 'react'
+import { Badge } from 'react-bootstrap'
 import {BiNotepad} from "react-icons/bi"
 import { MdLocalPhone } from 'react-icons/md';
 import { StaticImage } from 'gatsby-plugin-image'
-import { Badge } from 'react-bootstrap'
 import './projects.css'
 
 

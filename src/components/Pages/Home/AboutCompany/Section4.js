@@ -1,14 +1,14 @@
 import React from 'react'
-import styled from 'styled-components'
-import '../../../Style/global.css'
 import { Badge } from 'react-bootstrap'
-import './section4.css'
-import video1 from '../../../Assets/videos/era-t.mp4'
 import { StaticImage } from 'gatsby-plugin-image'
 import Wrapper from '../../../UI/Wrapper'
 import Slider from "react-slick";
+import styled from 'styled-components'
+import video1 from '../../../Assets/videos/era-t.mp4'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import '../../../Style/global.css'
+import './section4.css'
 
 
 import { useStaticQuery, graphql } from 'gatsby'

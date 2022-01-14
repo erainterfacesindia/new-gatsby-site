@@ -1,16 +1,16 @@
 import React from 'react'
-import Wrapper from '../../UI/Wrapper'
+import Badge from 'react-bootstrap/Badge'
+import Card from 'react-bootstrap/Card'
 import { useStaticQuery, graphql } from 'gatsby'
 import * as Styles from './FeatureSection.module.css'
-import Card from 'react-bootstrap/Card'
-import Badge from 'react-bootstrap/Badge'
 import {
     GiGraduateCap,
     GiShoppingCart,
     GiHospital,
     GiHeartBeats,
   } from "react-icons/gi"
-  import { FaUsers } from "react-icons/fa";
+  import { FaUsers } from "react-icons/fa"
+  import Wrapper from '../../UI/Wrapper'
   import "./feature.css"
   import '../../Style/global.css'
 

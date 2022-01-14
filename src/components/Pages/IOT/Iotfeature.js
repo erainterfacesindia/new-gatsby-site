@@ -1,12 +1,10 @@
 import React from 'react'
-import './iot.css'
 import { Badge } from 'react-bootstrap'
 import {Button} from '../../Button'
-import '../../Style/global.css'
 import { StaticImage } from 'gatsby-plugin-image'
 import { useStaticQuery, graphql } from 'gatsby'
-
-
+import './iot.css'
+import '../../Style/global.css'
 
 export default function Iotfeature() {
     const data= useStaticQuery(graphql`

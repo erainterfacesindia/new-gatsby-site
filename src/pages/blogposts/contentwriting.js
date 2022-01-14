@@ -1,16 +1,15 @@
 import * as React from "react"
-import Layout from "../../components/Layout"
-import '../../components/Style/global.css'
-import Wrapper from '../../components/UI/Wrapper'
 import { Badge } from 'react-bootstrap'
-import SEO from '../../components/SEO'
 import coverimage from '../../images/blogs/contentwriting.jpeg'
 import cimg1 from '../../images/blogs/typing.gif'
 import cimg2 from '../../images/blogs/booklove.gif'
 import cimg3 from '../../images/blogs/bookpages.gif'
 import cimg4 from '../../images/blogs/you-got-that-right-pointing.gif'
 import cimg5 from  '../../images/blogs/tipsy.gif'
-
+import Layout from "../../components/Layout"
+import SEO from '../../components/SEO'
+import Wrapper from '../../components/UI/Wrapper'
+import '../../components/Style/global.css'
 
 const ContentWriting = () => {
     return (

@@ -1,10 +1,9 @@
 import React from 'react'
+import Background from '../../../images/contactmap.jpg'
 import { Badge } from 'react-bootstrap'
 import ContactInfoItem from './ContactInfoItem';
 import { MdEmail, MdLocalPhone } from 'react-icons/md';
 import './contact.css'
-import Background from '../../../images/contactmap.jpg'
-
 
 const ContactPage = () => {
     return (

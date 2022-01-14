@@ -1,16 +1,14 @@
 import React from 'react'
-import './section2.css'
 import { Badge } from 'react-bootstrap'
-import Wrapper from '../../UI/Wrapper'
 import {GiGraduateCap} from "react-icons/gi"
 import { FaUsers } from "react-icons/fa"
 import { FaMobileAlt } from "react-icons/fa"
 import {IconContext} from "react-icons"
-import '../../Style/global.css'
 import { StaticImage } from "gatsby-plugin-image"
-
 import { useStaticQuery, graphql } from 'gatsby'
-
+import Wrapper from '../../UI/Wrapper'
+import './section2.css'
+import '../../Style/global.css'
 
 export default function Section2 (){
     const data= useStaticQuery(graphql`

@@ -1,13 +1,12 @@
 import * as React from "react"
 import {Button} from "../../../Button"
+import Carousel from 'react-bootstrap/Carousel'
 import styled from 'styled-components'
 import Wrapper from "../../../UI/Wrapper"
-import Carousel from 'react-bootstrap/Carousel'
-import './Section.css'
 import video1 from '../../../Assets/videos/s1.mp4'
 import video2 from '../../../Assets/videos/s2.mp4'
 import video3 from '../../../Assets/videos/s3.mp4'
-
+import './Section.css'
 
 
 const Section1 = (props) => {
