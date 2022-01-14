@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import '../components/Style/global.css'
 import SEO from '../components/SEO'
 
-const industries= () => {
+const Services= () => {
 return (
          <Layout>
              <SEO title="Services" />
@@ -15,4 +15,4 @@ return (
     )
 }
 
-export default industries
+export default Services

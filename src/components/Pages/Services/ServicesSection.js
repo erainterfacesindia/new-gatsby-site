@@ -1,14 +1,14 @@
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
- import { graphql } from "gatsby"
- import Slider from "react-slick";
- import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { graphql } from "gatsby"
 import './services.css'
 import Badge from 'react-bootstrap/Badge'
 import '../../Style/global.css'
 import { BsCodeSlash, BsPersonFill } from "react-icons/bs";
 import { SiGooglescholar} from "react-icons/si";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 
