@@ -45,7 +45,8 @@
     "react-sticky": "^6.0.3",
     "react-sticky-header": "^0.2.0",
     "slick-carousel": "^1.8.1",
-    "string-strip-html": "^9.1.5"
+    "string-strip-html": "^9.1.5",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "mini-css-extract-plugin": "^2.4.7",
