@@ -1,11 +1,11 @@
 import React from 'react'
-import { Badge } from 'react-bootstrap'
 import Slider from "react-slick";
-import { StaticImage } from 'gatsby-plugin-image'
-import Wrapper from '../../../UI/Wrapper'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './Client.css'
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import Wrapper from '../../../UI/Wrapper'
+import { Badge } from 'react-bootstrap'
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Client = () => {
     return (

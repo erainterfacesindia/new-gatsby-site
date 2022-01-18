@@ -1,10 +1,22 @@
 .nav-links {
     color:white; 
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    border-radius: 0.4rem;
     } 
     
-    .nav-links:hover::after {
-        color:#d5302c;
-
+    .nav-links:hover {
+        color:white;
+        background-color:#d5302c;
+    }
+     .jamnav{
+        transition: all 0.3s ease-in-out 0s;
+        cursor: pointer;
+        /* padding: 3px 5px 1px; */
+        border-radius: 0.4rem;
+     }
+    .jamnav:hover{
+        background-color:#fff;
     }
  .navbar
  {
@@ -50,6 +62,3 @@ Navbar{
 
 
 
-/* .navbar-light .navbar-nav .nav-link {
-    color: white;
-} */

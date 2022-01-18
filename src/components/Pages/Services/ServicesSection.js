@@ -1,14 +1,14 @@
 import React from 'react'
-import Badge from 'react-bootstrap/Badge'
-import { BsCodeSlash, BsPersonFill } from "react-icons/bs";
-import { graphql } from "gatsby"
-import { SiGooglescholar} from "react-icons/si";
-import Slider from "react-slick"
 import { StaticImage } from "gatsby-plugin-image"
-import "slick-carousel/slick/slick.css";
+ import { graphql } from "gatsby"
+ import Slider from "react-slick";
+ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './services.css'
+import Badge from 'react-bootstrap/Badge'
 import '../../Style/global.css'
+import { BsCodeSlash, BsPersonFill } from "react-icons/bs";
+import { SiGooglescholar} from "react-icons/si";
 
 
 
@@ -59,7 +59,7 @@ const ServicesSection = () => {
         
         <div class="container m-0" >
         <div class="mydivouter">
-        <StaticImage src="../../../images/p&i.webp" class="serviceimage" alt="erainterfaces-p&i-image"/>
+        <StaticImage src="../../../images/services/p&i.webp" class="serviceimage" alt="erainterfaces-p&i-image"/>
         <div class="overlay"></div>
         <div class="mybuttonoverlap text-center justify-content-center"><a href="/projectinternship"class="text-white">Know more </a></div>
   </div>

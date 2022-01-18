@@ -23,14 +23,12 @@
   } */
  
   .abouth3 {
-    color: #D5302C;
     text-transform: uppercase;
     padding-top:20px;
     font-size: 30px;
   }
   .abouticon {
     font-size: 4rem;
-    color: #D5302C;
     text-align:center;
     width:100%;
   }
@@ -42,12 +40,11 @@
   }
   .aboutsection3
   {
-    color: #D5302C;
     text-transform: uppercase;
   }
 
   .aboutvideoalignment{
-   height:auto;
+   height:100%;
    width: 100%;
     -o-object-fit: cover;
   }

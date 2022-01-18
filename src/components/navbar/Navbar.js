@@ -18,7 +18,7 @@ const Menu = () =>{
          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className=" justify-content-md-end"> 
           <Nav>
-          <Nav.Link aria-current="page" className="nav-links text-danger" href="/jamstack">JAMstack</Nav.Link> 
+          <Nav.Link aria-current="page" className="jamnav text-danger" href="/jamstack">JAMstack</Nav.Link> 
             <Nav.Link aria-current="page" className="nav-links text-white" href="/">Home</Nav.Link> 
             <NavDropdown aria-current="page" className="nav-links text-white" title={ <span className="text-white my-auto">About</span>} 
             href="/about" id="basic-nav-dropdown">
@@ -29,7 +29,7 @@ const Menu = () =>{
             {/* <Nav.Link className="nav-links text-white" href="/about">About</Nav.Link> */}
             <Nav.Link aria-current="page" className="nav-links text-white" href="/services">Services</Nav.Link>
             <Nav.Link aria-current="page" className="nav-links text-white" href="/industries">Industries</Nav.Link>
-            <Nav.Link aria-current="page" className="nav-links text-white" href="/blog">Blogs</Nav.Link>
+            <Nav.Link aria-current="page" className="nav-links text-white" href="/blogs">Blogs</Nav.Link>
             <Nav.Link aria-current="page" className="nav-links text-white" href="/iot">IoT</Nav.Link>
             <Nav.Link aria-current="page" className="nav-links text-white" href="/contact">Contact us</Nav.Link>
             {/* <Button href="/contact" size="md"  variant="danger">Contact us</Button>   */}

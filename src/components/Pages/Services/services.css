@@ -1,4 +1,4 @@
-.header::first-letter {
+  .header::first-letter {
     color: red;
   }
   .header {
@@ -296,11 +296,11 @@ body{margin-top:20px;}
   line-height: 1.5em;
 }
 
-/* .icon {
-  background: linear-gradient(180deg, #D5302C 0%, #D2335B 100%);
+.icon {
+  /* background: linear-gradient(180deg, #D5302C 0%, #D2335B 100%);
 border-radius: 100px;
-size:100px; 
-} */
+size:100px; */
+}
 
 .slick-slide > div {
   

@@ -1,7 +1,7 @@
 import React from 'react'
-import { Badge } from 'react-bootstrap'
 import ContactInfoItem from './ContactInfoItem';
 import { MdEmail, MdLocalPhone } from 'react-icons/md';
+import { Badge } from 'react-bootstrap'
 import './contact.css'
 
 

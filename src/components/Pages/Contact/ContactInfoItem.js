@@ -1,8 +1,7 @@
 import React from 'react';
 import { MdPlace } from 'react-icons/md';
-import PText from './PText';
 import styled from 'styled-components';
-
+import PText from './PText';
 
 const ItemStyles = styled.div`
   display: flex; 

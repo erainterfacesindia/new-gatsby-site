@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import { Badge } from 'react-bootstrap'
-import img1 from '../../../images/advisors/ram.jpg'
 import './OurAdvisors.css'
 import '../../Style/global.css'
+import img1 from '../../../images/advisors/ram.jpg'
 
 
 const ReadMore = ({ children }) => {

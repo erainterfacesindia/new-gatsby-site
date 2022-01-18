@@ -1,10 +1,10 @@
-import React from 'react'
 import { Link } from 'gatsby'
-import { FaFacebookSquare, FaLinkedin,FaInstagram,FaYoutube,FaTwitter  } from "react-icons/fa";
-import { AiFillHeart } from "react-icons/ai";
-import { StaticImage } from 'gatsby-plugin-image'
+import React from 'react'
 import styled from 'styled-components'
 import './Style/global.css'
+import { FaFacebookSquare, FaLinkedin,FaInstagram,FaYoutube,FaTwitter  } from "react-icons/fa";
+import { AiFillHeart } from "react-icons/ai";
+import { StaticImage } from 'gatsby-plugin-image';
 
 
 

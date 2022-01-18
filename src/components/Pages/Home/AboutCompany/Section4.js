@@ -1,32 +1,21 @@
 import React from 'react'
+import styled from 'styled-components'
+import '../../../Style/global.css'
 import { Badge } from 'react-bootstrap'
+import './section4.css'
+import video1 from '../../../Assets/videos/era-t.mp4'
 import { StaticImage } from 'gatsby-plugin-image'
 import Wrapper from '../../../UI/Wrapper'
 import Slider from "react-slick";
-import styled from 'styled-components'
-import video1 from '../../../Assets/videos/era-t.mp4'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import '../../../Style/global.css'
-import './section4.css'
 
 
-import { useStaticQuery, graphql } from 'gatsby'
+
 
 
 export default function Section4 (){
-    const data= useStaticQuery(graphql`
-    query {
-        wpPage(id: {eq: "cG9zdDo4OTc="}) {
-            title
-            uri
-            slug
-            content
-                }
-            }
-
-
-    `)
+  
     return (
         
         
@@ -38,7 +27,7 @@ export default function Section4 (){
         <div class="row">
                 <div className="col-lg-7 col-sm-12">
                     {/* <TitleContainer>About Our Company</TitleContainer> */}
-                        {/* <SubTitle>A team of #AUTODIDACTS</SubTitle>
+                        <SubTitle>A team of #AUTODIDACTS</SubTitle>
                             <p>We are an EdTech startup based out of Bengaluru. We are on a mission to provide better tools<br/> for the academicians and innovative learning frameworks 
                                 for students to create an ecosystem<br/> that could potentially change the way how current pedagogy is in play.</p>
                         <ul class="checkmark">
@@ -46,8 +35,8 @@ export default function Section4 (){
                         <li>Disruptive & Yet Meaningful Solutions Provider. </li>
                         <li>We never make anything that is boring. </li>
                         <li>Company with an employee-centric culture.</li>
-                        </ul> */}
-                        <div dangerouslySetInnerHTML={{__html: data.wpPage.content}}/>
+                        </ul> 
+                      
                         <Title>Our Tech Stacks & Tools</Title>  
                         <div class="wrapper-module">
                           <div class="slider">

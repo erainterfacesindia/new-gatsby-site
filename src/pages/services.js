@@ -1,12 +1,11 @@
 import React from 'react'
+import ServicesSection from '../components/Pages/Services/ServicesSection'
 import Callus from '../components/Callus'
 import Layout from "../components/Layout"
-import SEO from '../components/SEO'
-import ServicesSection from '../components/Pages/Services/ServicesSection'
 import '../components/Style/global.css'
+import SEO from '../components/SEO'
 
-
-const Services= () => {
+const industries= () => {
 return (
          <Layout>
              <SEO title="Services" />
@@ -16,4 +15,4 @@ return (
     )
 }
 
-export default Services
+export default industries

@@ -1,9 +1,10 @@
 import React from 'react'
+import './iot.css'
 import { Badge } from 'react-bootstrap'
 import {Button} from '../../Button'
-import { StaticImage } from 'gatsby-plugin-image';
-import './iot.css'
 import '../../Style/global.css'
+import { StaticImage } from 'gatsby-plugin-image';
+
 
 
 const Iot = () => {

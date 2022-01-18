@@ -1,10 +1,12 @@
 import React from 'react'
-import { Badge } from 'react-bootstrap'
-import { BsLinkedin } from "react-icons/bs"
-import { StaticImage } from "gatsby-plugin-image"
-import Wrapper from '../../UI/Wrapper'
 import './OurTeam.css'
+import { Badge } from 'react-bootstrap'
+import Wrapper from '../../UI/Wrapper'
+import { BsLinkedin } from "react-icons/bs"
 import '../../Style/global.css'
+import { StaticImage } from "gatsby-plugin-image"
+
+
 
 
 const OurTeam = () => {

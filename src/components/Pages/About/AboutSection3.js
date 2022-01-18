@@ -2,22 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { AiOutlineArrowDown} from "react-icons/ai";
 import Wrapper from '../../UI/Wrapper';
-import { useStaticQuery, graphql } from 'gatsby'
+
 
 
 export default function AboutSection3 (){
-    const data= useStaticQuery(graphql`
-    query {
-        wpPage(id: {eq: "cG9zdDo4MzM="}) {
-            title
-            uri
-            slug
-            content
-                }
-            }
-
-
-    `)
 
     return (
       
@@ -63,7 +51,6 @@ const AboutElements=styled.div`
     padding-bottom: 20px;  
 
     h1{
-      color: #D5302C;
       text-transform: uppercase;
       font-size:2.5rem;
       padding-bottom:0.5rem ;
