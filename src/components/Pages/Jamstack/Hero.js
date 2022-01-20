@@ -6,7 +6,7 @@ import './jamstack.css'
 const Hero = () => {
     return (
         <div class="p-3">
-        <div class="container-fluid flex-wrap flex-md-nowrap py-4" style={{padding:"0 5%"}}>
+        {/* <div class="container-fluid flex-wrap flex-md-nowrap py-4" style={{padding:"0 5%"}}> */}
             <section class="section hero has-cover bg-danger pt-5 pt-md-5 pb-4 pb-md-5">
             <div class="cover-image"  style={{ backgroundImage: `url(${Background})`}}>
             </div>
@@ -24,7 +24,7 @@ const Hero = () => {
             
                     </section>
         </div>
-        </div>
+        // </div>
     )
 }
 

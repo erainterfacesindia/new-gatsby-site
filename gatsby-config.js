@@ -64,6 +64,15 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
   },
+  // {
+  //   resolve: "gatsby-source-strapi",
+  //   options: {
+  //     apiURL: process.env.API_URL || "http://localhost:1337",
+  //     collectionTypes: ["blogs", "category", "services"],
+  //     singleTypes: [`homepage`, `global`],
+  //     queryLimit: 1000,
+  //   },
+  // },
   //  {
   //   resolve: `gatsby-source-filesystem`,
   //   options: {
